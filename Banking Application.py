@@ -3,11 +3,6 @@
 Баланс
 Лимиты
 Перевод
-
-ООП
-Наследование
-АВС классы
-Паттерн стратегия
 """
 
 from abc import ABC
@@ -39,7 +34,7 @@ class ProBalance:
         if self.balance + value * 0.95 < 0:                        # Переназначаем метод / изменяем
             print(f'Not enough balance {self.balance}')
         else:
-            self.balance += value * 0.95 if self.balance + value * 0.95 < self.balance else value  # тернарный оператор
+            self.balance += value * 0.95 if self.balance + value * 0.95 < self.balance else value      # тернарный оператор
 
 
 class CreditCard(CreditBalance, Wallet):
