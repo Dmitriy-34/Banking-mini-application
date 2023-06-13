@@ -31,10 +31,10 @@ class CreditBalance:
 
 class ProBalance:
     def change_balance(self, value: int):
-        if self.balance + value * 0.95 < 0:                        # Переназначаем метод / изменяем
+        if self.balance + value * 0.95 < 0:                        
             print(f'Not enough balance {self.balance}')
         else:
-            self.balance += value * 0.95 if self.balance + value * 0.95 < self.balance else value      # тернарный оператор
+            self.balance += value * 0.95 if self.balance + value * 0.95 < self.balance else value      
 
 
 class CreditCard(CreditBalance, Wallet):
